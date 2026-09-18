@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Report an Issue - CivicTracker</title>
+
+    <style>
+        /* Basic page styling */
+        body {
+            margin: 0;
+            background: #f4f6f8;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #111;
+        }
+
+        /* Center the main content */
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        /* Top header */
+        header {
+            height: 58px;
+            background: white;
+            border-bottom: 1px solid #ddd;
+            text-align: center;
+            position: relative;
+        }
+
+        header h2 {
+            margin: 0;
+            padding-top: 18px;
+            font-size: 17px;
+        }
+
+        .back {
+            position: absolute;
+            left: 20px;
+            top: 17px;
+            color: #222;
+            text-decoration: none;
+            font-size: 25px;
+        }
+
+        /* Page heading */
+        main {
+            padding-top: 25px;
+        }
+
+        h1 {
+            margin: 0 0 12px;
+            font-size: 24px;
+        }
+
+        .subtitle {
+            margin: 0;
+            color: #526a83;
+            font-size: 15px;
+        }
+
+        /* Category cards */
+        .card {
+            display: inline-block;
+            box-sizing: border-box;
+            width: 435px;
+            height: 88px;
+            margin-top: 30px;
+            margin-right: 10px;
+            padding: 18px 20px;
+            background: white;
+            border: 1px solid #d9dde2;
+            border-radius: 10px;
+            color: #111;
+            text-decoration: none;
+            vertical-align: top;
+        }
+
+        /* Colored icon boxes */
+        .icon {
+            display: inline-block;
+            width: 48px;
+            height: 48px;
+            margin-right: 12px;
+            border-radius: 10px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 48px;
+            font-size: 22px;
+        }
+
+        .pothole-icon {
+            background: #fff0f0;
+        }
+
+        .light-icon {
+            background: #fffbe8;
+        }
+
+        /* Text beside the icons */
+        .text {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .text h3 {
+            margin: 0 0 6px;
+            font-size: 17px;
+        }
+
+        .text p {
+            margin: 0;
+            color: #526a83;
+            font-size: 14px;
+        }
+
+        /* Right arrow */
+        .arrow {
+            float: right;
+            margin-top: 12px;
+            font-size: 24px;
+            color: #526a83;
+        }
+
+        .card:hover {
+            border-color: #1976d2;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header with Back button -->
+    <header>
+        <a class="back" href="index.html">&lsaquo;</a>
+        <h2>Report an Issue</h2>
+    </header>
+
+    <main class="container">
+        <!-- Page title -->
+        <h1>What do you want to report?</h1>
+        <p class="subtitle">Select a category below to provide specific details.</p>
+
+        <!-- Pothole category -->
+        <a class="card" href="form.html">
+            <span class="icon pothole-icon">⚠</span>
+            <span class="text">
+                <h3>Pothole &amp; Road Damage</h3>
+                <p>Craters, cracks &amp; surface defects</p>
+            </span>
+            <span class="arrow">&rsaquo;</span>
+        </a>
+
+        <!-- Streetlight category -->
+        <a class="card" href="#">
+            <span class="icon light-icon">💡</span>
+            <span class="text">
+                <h3>Broken Streetlight</h3>
+                <p>Flashing, dead, or damaged light poles</p>
+            </span>
+            <span class="arrow">&rsaquo;</span>
+        </a>
+    </main>
+
+</body>
+</html>
