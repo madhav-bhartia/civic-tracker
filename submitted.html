@@ -1,0 +1,188 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Submitted Reports</title>
+
+        <style>
+            body {
+                margin: 0;
+                font-family: Arial;
+                background: #f5f5f5;
+                font-size: 16px;
+            }
+
+            header {
+                height: 65px;
+                background: white;
+                padding: 0 20px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                border-bottom: 1px solid #ddd;
+                font-size: 18px;
+            }
+
+            .logo {
+                font-weight: bold;
+                font-size: 20px;
+            }
+
+            .profile {
+                background: #1976d2;
+                color: white;
+                border-radius: 50%;
+                padding: 10px;
+                font-size: 16px;
+            }
+
+            .page {
+                width: 90%;
+                max-width: 600px;
+                margin: 100px auto;
+            }
+
+            .location {
+                display: inline-block;
+                color: #1976d2;
+                background: #eaf3ff;
+                padding: 8px 15px;
+                border-radius: 20px;
+                font-size: 14px;
+            }
+
+            h3 {
+                font-size: 20px;
+                margin: 20px 0;
+            }
+
+            .stats {
+                display: flex;
+                gap: 10px;
+            }
+
+            .box {
+                flex: 1;
+                height: 50px;
+                text-align: center;
+                padding: 10px;
+                background: white;
+                border: 1px solid #ddd;
+                border-radius: 6px;
+                font-size: 12px;
+            }
+            
+            .box b {
+                font-size: 22px;
+            }
+
+            .reported {
+                border-color: #ffcdd2;
+                color: #d32f2f;
+                background: #fff5f5;
+            }
+
+            .progress {
+                border-color: #ffe082;
+                color: #f57f17;
+                background: #fffdf5;
+            }
+
+            .resolved {
+                border-color: #c8e6c9;
+                color: #2e7d32;
+                background: #f5fff5;
+            }
+
+            .report {
+                margin: 20px auto;
+                background: white;
+                padding: 15px;
+                border-radius: 8px;
+                border: 1px solid #ddd;
+            }
+
+            .report h4 {
+                margin: 5px 0;
+                font-size: 16px;
+            }
+
+            .report p {
+                margin: 6px 0;
+                font-size: 14px;
+                color: #777;
+            }
+
+            .status {
+                float: right;
+                background: #e53935;
+                color: white;
+                padding: 5px 12px;
+                border-radius: 12px;
+                font-size: 12px;
+                font-weight: bold;
+            }
+
+            .live {
+                float: right;
+                color: green;
+                font-size: 14px;
+                font-weight: bold;
+            }
+
+            footer {
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                height: 55px;
+                background: white;
+                border-top: 1px solid #ddd;
+                text-align: center;
+                padding-top: 18px;
+                box-sizing: border-box;
+                font-size: 16px;
+            }
+
+            footer a {
+                float: left;
+                margin-left: 20px;
+                color: black;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <div class="logo">🛡️ CivicTracker</div>
+            <div>◯　🔔　<span class="profile">JD</span></div>
+        </header>
+
+        <div class="page">
+            <span class="location">📍 Downtown District · 0.3 km radius</span>
+
+            <span class="live">● LIVE</span>
+
+            <h3>Your Submitted Reports</h3>
+
+            <div class="stats">
+                <div class="box reported"><b>1</b><br />REPORTED</div>
+
+                <div class="box progress"><b>0</b><br />IN PROGRESS</div>
+
+                <div class="box resolved"><b>0</b><br />RESOLVED</div>
+            </div>
+
+            <div class="report">
+                <h4>Deep Pothole on Main St</h4>
+                <p>📍 Main St & 4th Ave</p>
+                <p>◷ 2 hours ago</p>
+                <span class="status">Reported</span>
+            </div>
+        </div>
+
+        <footer>        
+            <a href="index.html">‹ Go Back</a>
+            <b>Your Reported Issues</b>
+        </footer>
+    </body>
+</html>
